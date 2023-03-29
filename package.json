@@ -1,0 +1,17 @@
+{
+  "name": "msgextensionapp",
+  "version": "1.0.0",
+  "description": "Message Extension Teams Application build with NodeJS",
+  "main": "getBooks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akash Chaudhary",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.13.1",
+    "botbuilder-teams": "^0.2.9",
+    "ngrok": "^4.3.3",
+    "restify": "^11.1.0"
+  }
+}
