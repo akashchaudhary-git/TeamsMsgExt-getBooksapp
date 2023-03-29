@@ -7,7 +7,7 @@ var builder = require('botbuilder');
 var teams = require('botbuilder-teams');
 
 var connector = new teams.TeamsChatConnector({
-    appId:"<Bot app Id >",
+    appId:"<Bot app id>",
     appPassword:"<Bot app password>"
 });
 
@@ -16,9 +16,9 @@ const port = 8080;
 var server = restify.createServer();
 
 server.listen(port,function(){
-    console.log('Node.js server listening on ${port}');
+    console.log(`Node.js server listening on ${port}`);
     ngrok.connect(port,function(err,url){
-        console.log('Node.js local server is publicly accessible at ${url}');
+        console.log(`Node.js local server is publicly accessible at ${url}`);
     });
     console.log('%s listening to %s',server.name,util.inspect(server.address()));
 });
